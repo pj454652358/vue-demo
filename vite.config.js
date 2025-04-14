@@ -14,7 +14,13 @@ export default defineConfig({
       return middlewares;
     },
   },
-
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@import "@/styles/variables.scss";`,
+      },
+    },
+  },
   optimizeDeps: {
     include: ['vue', 'vue-router'],
   },
