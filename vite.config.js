@@ -9,4 +9,7 @@ export default defineConfig({
     https: false, // 使用 HTTP 请求
     historyApiFallback: true, // 添加路由转发支持
   },
+  optimizeDeps: {
+    include: ['vue', 'vue-router'],
+  },
 });
