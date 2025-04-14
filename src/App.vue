@@ -1,26 +1,18 @@
 <template>
-  <div id="app">
-    <h1>Vue 3 示例应用</h1>
-    <ExampleComponent />
+  <div>
+    <h1>欢迎使用 Vue 应用！</h1>
+    <p>这是一个简单的示例。</p>
   </div>
 </template>
 
 <script>
-import ExampleComponent from './components/ExampleComponent.vue';
-
 export default {
   name: 'App',
-  components: {
-    ExampleComponent,
-  },
 };
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped>
+h1 {
+  color: blue;
 }
 </style>
